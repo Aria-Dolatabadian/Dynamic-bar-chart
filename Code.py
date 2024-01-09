@@ -17,7 +17,7 @@ wheat_production = pd.read_csv('production_data.csv', index_col='Year').values.T
 # Create a colormap for different colors
 colors = plt.cm.viridis(np.linspace(0, 1, num_countries))
 
-# Load country flags (replace 'path_to_flags_folder' with the actual path to your flag images)
+# Load country flags (f'type/the/actual/path/to/your/flag/images/{country}.png') 
 flag_images = [plt.imread(f'{country}.png') for country in countries]
 
 # Set a fixed height for the flags
